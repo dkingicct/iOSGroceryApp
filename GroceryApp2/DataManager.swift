@@ -81,7 +81,7 @@ extension DataManager {
         }
         let obj = GroceryItem(entity: entity, insertInto: ctx)
         obj.name = data.name
-        obj.count = Int16(data.count)
+        obj.count = data.count
         obj.list = groceryLists.value(at: selectedGroceryListsIndex)
         
         try? save()
